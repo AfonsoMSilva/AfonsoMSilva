@@ -1,0 +1,7 @@
+2024/04/28-20:00:33.134 318 Reusing MANIFEST /home/af/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_learning.edx.org_0.indexeddb.leveldb/MANIFEST-000001
+2024/04/28-20:00:33.134 318 Recovering log #3
+2024/04/28-20:00:33.134 318 Reusing old log /home/af/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_learning.edx.org_0.indexeddb.leveldb/000003.log 
+2024/04/28-20:29:15.431 323 Level-0 table #5: started
+2024/04/28-20:29:15.482 323 Level-0 table #5: 3539 bytes OK
+2024/04/28-20:29:15.517 323 Delete type=0 #3
+2024/04/28-20:29:15.517 322 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,68 @@
+2024-06-08 00:29:55.833 [info] Started initializing default profile extensions in extensions installation folder. file:///home/af/.vscode-oss/extensions
+2024-06-08 00:29:56.152 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/af/.vscode-oss/extensions
+2024-06-08 00:30:37.401 [info] Getting Manifest... franneck94.c-cpp-runner
+2024-06-08 00:30:37.525 [info] Installing extension: franneck94.c-cpp-runner vscode-userdata:/home/af/.vscode-oss/extensions/extensions.json
+2024-06-08 00:30:37.677 [info] Getting Manifest... vadimcn.vscode-lldb
+2024-06-08 00:30:37.895 [info] Installing extension: vadimcn.vscode-lldb vscode-userdata:/home/af/.vscode-oss/extensions/extensions.json
+2024-06-08 00:30:38.422 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-06-08 00:30:38.422 [info] Extension signature verification is not done: vadimcn.vscode-lldb
+2024-06-08 00:30:38.435 [info] Extracted extension to file:///home/af/.vscode-oss/extensions/vadimcn.vscode-lldb-1.10.0-universal: vadimcn.vscode-lldb
+2024-06-08 00:30:38.470 [info] Renamed to /home/af/.vscode-oss/extensions/vadimcn.vscode-lldb-1.10.0-universal
+2024-06-08 00:30:38.557 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/af/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/af/.vscode-oss/extensions/extensions.json.vsctmp'
+    at c.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:19235)
+    at m (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:19345)
+    at t.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36685)
+    at t.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:29033)
+    at async b.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:14899)
+    at async H.vb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:117665)
+2024-06-08 00:30:38.593 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-06-08 00:30:38.593 [info] Extension signature verification is not done: franneck94.c-cpp-runner
+2024-06-08 00:30:38.626 [info] Extracted extension to file:///home/af/.vscode-oss/extensions/franneck94.c-cpp-runner-9.4.7-universal: franneck94.c-cpp-runner
+2024-06-08 00:30:38.664 [info] Renamed to /home/af/.vscode-oss/extensions/franneck94.c-cpp-runner-9.4.7-universal
+2024-06-08 00:30:38.743 [info] Extension installed successfully: vadimcn.vscode-lldb vscode-userdata:/home/af/.vscode-oss/extensions/extensions.json
+2024-06-08 00:30:38.743 [info] Extension installed successfully: franneck94.c-cpp-runner vscode-userdata:/home/af/.vscode-oss/extensions/extensions.json
+2024-06-08 00:30:38.744 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/af/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/af/.vscode-oss/extensions/extensions.json.vsctmp'
+    at c.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:19235)
+    at m (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:19345)
+    at t.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36685)
+    at t.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:29033)
+    at async b.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:14899)
+    at async H.vb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:117665)
+2024-06-08 00:32:53.920 [info] Uninstalling extension from the profile: franneck94.c-cpp-runner@9.4.7 vscode-userdata:/home/af/.vscode-oss/extensions/extensions.json
+2024-06-08 00:32:53.978 [info] Marked extension as uninstalled franneck94.c-cpp-runner-9.4.7-universal
+2024-06-08 00:32:54.003 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/af/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/af/.vscode-oss/extensions/extensions.json.vsctmp'
+    at c.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:19235)
+    at m (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:19345)
+    at t.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36685)
+    at t.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:29033)
+    at async b.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:14899)
+    at async H.vb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:117665)
+2024-06-08 00:32:54.098 [info] Successfully uninstalled extension from the profile franneck94.c-cpp-runner@9.4.7 vscode-userdata:/home/af/.vscode-oss/extensions/extensions.json
+2024-06-08 00:32:55.616 [info] Uninstalling extension from the profile: vadimcn.vscode-lldb@1.10.0 vscode-userdata:/home/af/.vscode-oss/extensions/extensions.json
+2024-06-08 00:32:55.679 [info] Marked extension as uninstalled vadimcn.vscode-lldb-1.10.0
+2024-06-08 00:32:55.698 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/af/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/af/.vscode-oss/extensions/extensions.json.vsctmp'
+    at c.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:19235)
+    at m (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:19345)
+    at t.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36685)
+    at t.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:29033)
+    at async b.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:14899)
+    at async H.vb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:117665)
+2024-06-08 00:32:55.801 [info] Successfully uninstalled extension from the profile vadimcn.vscode-lldb@1.10.0 vscode-userdata:/home/af/.vscode-oss/extensions/extensions.json
+2024-06-08 00:33:31.539 [info] Getting Manifest... franneck94.c-cpp-runner
+2024-06-08 00:33:31.671 [info] Installing extension: franneck94.c-cpp-runner vscode-userdata:/home/af/.vscode-oss/extensions/extensions.json
+2024-06-08 00:33:31.841 [info] Getting Manifest... vadimcn.vscode-lldb
+2024-06-08 00:33:31.890 [info] Installing extension: vadimcn.vscode-lldb vscode-userdata:/home/af/.vscode-oss/extensions/extensions.json
+2024-06-08 00:33:32.017 [info] Removed the extension from uninstalled list: franneck94.c-cpp-runner
+2024-06-08 00:33:32.060 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-06-08 00:33:32.060 [info] Extension signature verification is not done: vadimcn.vscode-lldb
+2024-06-08 00:33:32.206 [info] Extension installed successfully: franneck94.c-cpp-runner vscode-userdata:/home/af/.vscode-oss/extensions/extensions.json
+2024-06-08 00:33:32.206 [info] Extension installed successfully: vadimcn.vscode-lldb vscode-userdata:/home/af/.vscode-oss/extensions/extensions.json

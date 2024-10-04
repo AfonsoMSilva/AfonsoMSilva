@@ -1,0 +1,6 @@
+2024/01/16-21:18:38.282 1160 Creating DB /home/af/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.freeconvert.com_0.indexeddb.leveldb since it was missing.
+2024/01/16-21:18:38.383 1160 Reusing MANIFEST /home/af/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.freeconvert.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/01/16-21:20:01.777 1161 Level-0 table #5: started
+2024/01/16-21:20:01.810 1161 Level-0 table #5: 3621 bytes OK
+2024/01/16-21:20:01.841 1161 Delete type=0 #3
+2024/01/16-21:20:01.841 1161 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

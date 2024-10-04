@@ -1,0 +1,13 @@
+2024/02/11-17:18:29.957 427 Reusing MANIFEST /home/af/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_app.gohighlevel.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/11-17:18:29.957 427 Recovering log #4
+2024/02/11-17:18:29.957 427 Reusing old log /home/af/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_app.gohighlevel.com_0.indexeddb.leveldb/000004.log 
+2024/02/11-17:18:30.252 428 Level-0 table #8: started
+2024/02/11-17:18:30.303 428 Level-0 table #8: 19219 bytes OK
+2024/02/11-17:18:30.378 428 Delete type=0 #4
+2024/02/11-17:18:30.378 428 Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/02/11-17:19:07.988 428 Compacting 1@1 + 1@2 files
+2024/02/11-17:19:08.020 428 Generated table #9@1: 76 keys, 14161 bytes
+2024/02/11-17:19:08.020 428 Compacted 1@1 + 1@2 files => 14161 bytes
+2024/02/11-17:19:08.051 428 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/02/11-17:19:08.051 428 Delete type=2 #5
+2024/02/11-17:19:08.051 428 Delete type=2 #8

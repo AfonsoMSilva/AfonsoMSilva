@@ -1,0 +1,14 @@
+2024/02/03-19:24:02.462 452 Reusing MANIFEST /home/af/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_flux-dashboard.notion.site_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/03-19:24:02.462 452 Recovering log #12
+2024/02/03-19:24:02.462 452 Reusing old log /home/af/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_flux-dashboard.notion.site_0.indexeddb.leveldb/000012.log 
+2024/02/03-19:24:02.462 452 Delete type=2 #11
+2024/02/03-19:24:02.852 452 Level-0 table #17: started
+2024/02/03-19:24:02.886 452 Level-0 table #17: 574 bytes OK
+2024/02/03-19:24:02.933 452 Delete type=0 #12
+2024/02/03-19:24:02.933 452 Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at '\x00\x06\x00\x00\x05' @ 258 : 1
+2024/02/03-19:24:02.933 452 Compacting 1@0 + 1@1 files
+2024/02/03-19:24:02.996 452 Generated table #18@0: 21 keys, 642 bytes
+2024/02/03-19:24:02.996 452 Compacted 1@0 + 1@1 files => 642 bytes
+2024/02/03-19:24:03.035 452 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/02/03-19:24:03.035 452 Delete type=2 #17
+2024/02/03-19:24:03.036 45d Manual compaction at level-0 from '\x00\x06\x00\x00\x05' @ 258 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)

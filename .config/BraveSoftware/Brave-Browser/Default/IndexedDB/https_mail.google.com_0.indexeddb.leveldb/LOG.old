@@ -1,0 +1,15 @@
+2024/02/03-19:07:17.056 452 Reusing MANIFEST /home/af/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/03-19:07:17.056 452 Recovering log #4
+2024/02/03-19:07:17.158 452 Reusing old log /home/af/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000004.log 
+2024/02/03-19:23:00.124 45b Level-0 table #8: started
+2024/02/03-19:23:00.250 45b Level-0 table #8: 2683826 bytes OK
+2024/02/03-19:23:00.401 45b Delete type=0 #4
+2024/02/03-19:40:54.483 452 Compacting 1@1 + 1@2 files
+2024/02/03-19:40:54.601 452 Generated table #9@1: 240 keys, 416632 bytes
+2024/02/03-19:40:54.601 452 Compacted 1@1 + 1@2 files => 416632 bytes
+2024/02/03-19:40:54.679 452 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/02/03-19:40:54.679 452 Delete type=2 #5
+2024/02/03-19:40:54.680 452 Delete type=2 #8
+2024/02/03-19:41:08.608 453 Level-0 table #11: started
+2024/02/03-19:41:08.792 453 Level-0 table #11: 2888274 bytes OK
+2024/02/03-19:41:08.901 453 Delete type=0 #7

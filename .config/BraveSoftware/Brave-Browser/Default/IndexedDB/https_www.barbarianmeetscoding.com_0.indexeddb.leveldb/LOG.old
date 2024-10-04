@@ -1,0 +1,6 @@
+2024/07/06-18:13:32.619 354 Creating DB /home/af/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.barbarianmeetscoding.com_0.indexeddb.leveldb since it was missing.
+2024/07/06-18:13:32.745 354 Reusing MANIFEST /home/af/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.barbarianmeetscoding.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/07/06-18:14:04.997 355 Level-0 table #5: started
+2024/07/06-18:14:05.048 355 Level-0 table #5: 1270 bytes OK
+2024/07/06-18:14:05.083 355 Delete type=0 #3
+2024/07/06-18:14:05.083 355 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

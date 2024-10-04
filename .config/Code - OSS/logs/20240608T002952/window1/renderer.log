@@ -1,0 +1,17 @@
+2024-06-08 00:29:55.677 [info] Started local extension host with pid 8554.
+2024-06-08 00:29:55.685 [info] Started initializing default profile extensions in extensions installation folder. file:///home/af/.vscode-oss/extensions
+2024-06-08 00:29:56.170 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/af/.vscode-oss/extensions
+2024-06-08 00:30:00.193 [info] [perf] Render performance baseline is 21ms
+2024-06-08 00:30:16.773 [info] Started local extension host with pid 8671.
+2024-06-08 00:30:19.706 [info] [perf] Render performance baseline is 20ms
+2024-06-08 00:30:40.610 [info] Started local extension host with pid 8765.
+2024-06-08 00:30:43.927 [error] [Extension Host] (node:8765) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2024-06-08 00:31:30.547 [error] Unable to read file '/home/af/programming/conway/main.c' (Error: File not modified since): Error: Unable to read file '/home/af/programming/conway/main.c' (Error: File not modified since)
+    at o.F (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:657:19291)
+    at o.D (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:657:19179)
+    at async d.M (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2202:35250)
+    at async d.readStream (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2202:35007)
+    at async L.Cb (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2191:11348)
+    at async L.resolve (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2191:9760)
+    at async vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2202:31053

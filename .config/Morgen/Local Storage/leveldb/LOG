@@ -1,0 +1,9 @@
+2024/04/26-21:57:32.868 30d Reusing MANIFEST /home/af/.config/Morgen/Local Storage/leveldb/MANIFEST-000001
+2024/04/26-21:57:33.166 30d Recovering log #180
+2024/04/26-21:57:33.308 30d Reusing old log /home/af/.config/Morgen/Local Storage/leveldb/000180.log 
+2024/04/26-21:59:42.927 2eb Level-0 table #184: started
+2024/04/26-21:59:43.011 2eb Level-0 table #184: 71409 bytes OK
+2024/04/26-21:59:43.112 2eb Delete type=0 #180
+2024/04/26-22:09:42.927 2eb Level-0 table #186: started
+2024/04/26-22:09:42.988 2eb Level-0 table #186: 67547 bytes OK
+2024/04/26-22:09:43.025 2eb Delete type=0 #183

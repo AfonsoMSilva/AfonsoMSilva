@@ -1,0 +1,15 @@
+2024/07/10-11:04:23.829 33e Reusing MANIFEST /home/af/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.barbarianmeetscoding.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/07/10-11:04:23.829 33e Recovering log #4
+2024/07/10-11:04:23.829 33e Reusing old log /home/af/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.barbarianmeetscoding.com_0.indexeddb.leveldb/000004.log 
+2024/07/10-11:05:00.864 33e Level-0 table #8: started
+2024/07/10-11:05:00.914 33e Level-0 table #8: 1219 bytes OK
+2024/07/10-11:05:00.950 33e Delete type=0 #4
+2024/07/10-11:05:00.950 33e Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2024/07/10-11:05:00.950 33e Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x14\x00r\x00e\x00s\x00o\x00u\x00r\x00c\x00e\x00s\x00:\x00/\x00p\x00r\x00o\x00j\x00e\x00c\x00t\x00s\x00/' @ 75 : 1
+2024/07/10-11:05:00.950 33e Compacting 1@1 + 1@2 files
+2024/07/10-11:05:00.998 33e Generated table #9@1: 27 keys, 978 bytes
+2024/07/10-11:05:00.998 33e Compacted 1@1 + 1@2 files => 978 bytes
+2024/07/10-11:05:01.033 33e compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/07/10-11:05:01.033 33e Delete type=2 #5
+2024/07/10-11:05:01.033 33e Delete type=2 #8
+2024/07/10-11:05:01.033 33e Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x14\x00r\x00e\x00s\x00o\x00u\x00r\x00c\x00e\x00s\x00:\x00/\x00p\x00r\x00o\x00j\x00e\x00c\x00t\x00s\x00/' @ 75 : 1 .. (end); will stop at (end)

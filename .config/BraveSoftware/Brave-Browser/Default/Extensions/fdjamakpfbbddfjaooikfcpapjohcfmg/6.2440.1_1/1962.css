@@ -1,0 +1,670 @@
+::-ms-clear {
+  /**
+   * X on inputs is too big, did not find a straight-forward way
+   * to change its size, hide it until further notice
+   * display:none breaks padding-right on input:
+   * http://stackoverflow.com/a/14739092
+   */
+  width: 0;
+  height: 0;
+}
+/* custom */
+* {
+  box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* prettier-ignore */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,
+big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl,
+dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time,
+mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* HTML5 display-role reset for older browsers */
+/* prettier-ignore */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button {
+  color: inherit;
+}
+strong {
+  font-weight: 600;
+}
+/*
+ * Custom @font-face rules are injected as a style element by
+ * <AppThemeProvider /> and rely on the @dashlane/fonts dependency.
+ */
+:root {
+  /* Font family variables */
+
+  /* Password Specific Styles */
+
+  /* Font size variables */
+
+  /* Font weight variables */
+
+  /* Line heights variables */
+}
+/*
+@deprecated
+* use z-index.ts values
+* Refer to z-index variables & values used in ui-components before updating this file.
+*/
+:root {
+  /* 1. Base z-index, to be used for most content elements that require a z-index. */
+  /* 2. "Below" z-index, to be used when placing an element "below" another within the stacking context. */
+
+  /* 3. Various previous "Content Overlap" z-index values, can be merged with caution. */
+
+  /* 4. Panel z-index. */
+
+  /* 5. "Above Panel" z-index. */
+
+  /*
+  * All variables from here refer to previously hardcoded z-index values.
+  */
+
+  /* Base z-index, see 1, keep sorted to reduce merge conflicts */
+
+  /* "Content Overlap" z-index, see 3. */
+
+  /* Looks unused ? */
+
+  /* Panel z-index, see 4. */
+
+  /* "Above Panel" z-index, see 5. */
+}
+html,
+body {
+  font-family: 'Public Sans', 'Helvetica Neue', Helvetica,
+    Arial, 'Lucida Grande', sans-serif;
+  height: 100%;
+}
+body {
+  line-height: initial;
+  width: 100%;
+  /*
+      Remove "rubberband" scroll effect when reaching the page limit
+      https://developers.google.com/web/updates/2017/11/overscroll-behavior#disableglow
+    */
+  overscroll-behavior-y: none;
+}
+h1 {
+  font-family: 'GT Walsheim Pro', 'Helvetica', 'Arial',
+    sans-serif;
+}
+button {
+  font-family: 'Public Sans', 'Helvetica Neue', Helvetica,
+    Arial, 'Lucida Grande', sans-serif;
+}
+/*
+  Do not apply this global styling to ui-components components because styling will clash.
+*/
+input:focus:not[class*='ui-components'],
+textarea:focus:not[class*='ui-components'] {
+  border-radius: 4px;
+  box-shadow: none;
+  outline: none;
+}
+
+/* GT Walsheim Pro */
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('GT Walsheim Pro Light'), local('GTWalsheimPro-Light'),
+    url(/620b65e9523503d0d6e0.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('GT Walsheim Pro Regular'), local('GTWalsheimPro-Regular'),
+    url(/5d003e71616db8f7d61c.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('GT Walsheim Pro Medium'), local('GTWalsheimPro-Medium'),
+    url(/8a124e761cceac039878.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('GT Walsheim Pro Bold'), local('GTWalsheimPro-Bold'),
+    url(/bc09e837049ce08667e1.woff2) format('woff2');
+}
+
+/* Public Sans */
+
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('Public Sans Light'), local('PublicSans-Light'),
+    url(/cdd47d09b6bfea77bd3a.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('Public Sans Regular'), local('PublicSans-Regular'),
+    url(/df96c41aa5b9122054bb.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('Public Sans Medium'), local('PublicSans-Medium'),
+    url(/2fa3733025adac23acbd.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('Public Sans SemiBold'), local('PublicSans-SemiBold'),
+    url(/01fff8c250aab7927a1e.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('Public Sans Bold'), local('PublicSans-Bold'),
+    url(/ebee06c589c0446f1e4e.woff2) format('woff2');
+}
+
+/* Space Mono */
+
+@font-face {
+  font-family: 'Space Mono';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('Space Mono Regular'), local('SpaceMono-Regular'),
+    url(/4421671c7ddc1c03184d.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('Space Mono Bold'), local('SpaceMono-Bold'),
+    url(/4a632e4331ad1ca3a80e.woff2) format('woff2');
+}
+
+/* Apercu Mono Pro */
+
+@font-face {
+  font-family: 'Apercu Mono Pro';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('Apercu Mono Pro Regular'), local('ApercuMonoPro-Regular'),
+    url(/7bcdcb135690a7b0e804.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('PublicSans-Regular'),
+    url(/0a9b80cacf3c05afd978.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Apercu Mono Pro';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('ApercuMonoPro-Regular'),
+    url(/8a81173f6b4cf6c859de.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('PublicSans-SemiBold'),
+    url(/4653fc7ad741a19f5af9.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('PublicSans-Medium'),
+    url(/64904ce87d6b967f8521.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  src: local('GTWalsheimPro-Medium'),
+    url(/2677f80de50dc27c8ac6.woff2) format('woff2');
+}
+
+/*
+ * Custom @font-face rules are injected as a style element by
+ * <AppThemeProvider /> and rely on the @dashlane/fonts dependency.
+ */
+:root {
+  /* Font family variables */
+
+  /* Password Specific Styles */
+
+  /* Font size variables */
+
+  /* Font weight variables */
+
+  /* Line heights variables */
+}
+/*
+@deprecated
+* use z-index.ts values
+* Refer to z-index variables & values used in ui-components before updating this file.
+*/
+:root {
+  /* 1. Base z-index, to be used for most content elements that require a z-index. */
+  /* 2. "Below" z-index, to be used when placing an element "below" another within the stacking context. */
+
+  /* 3. Various previous "Content Overlap" z-index values, can be merged with caution. */
+
+  /* 4. Panel z-index. */
+
+  /* 5. "Above Panel" z-index. */
+
+  /*
+  * All variables from here refer to previously hardcoded z-index values.
+  */
+
+  /* Base z-index, see 1, keep sorted to reduce merge conflicts */
+
+  /* "Content Overlap" z-index, see 3. */
+
+  /* Looks unused ? */
+
+  /* Panel z-index, see 4. */
+
+  /* "Above Panel" z-index, see 5. */
+}
+.marketingContent--U4y3s3SoHP {
+  padding-left: 80px;
+  padding-right: 32px;
+  width: 100%;
+}
+@media screen and (max-width: 80em) {
+  .marketingContent--U4y3s3SoHP {
+    padding-left: 48px;
+  }
+}
+.marketingInner--o89TMZ6M_G {
+  padding-top: 180px;
+  max-width: 80%;
+  min-width: 360px;
+}
+.stepsContainer--GmQnEEjR4P {
+  font-size: 18px;
+  padding: 36px 0;
+}
+.stepsContainer--GmQnEEjR4P .step--usvQ4z7ZdN {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+.stepsContainer--GmQnEEjR4P .step--usvQ4z7ZdN .stepIcon--tRb8R5BJZg {
+  border-radius: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'GT Walsheim Pro', 'Helvetica', 'Arial',
+    sans-serif;
+  /* Couple the circle size to the font size */
+  line-height: calc(16px * 2);
+  width: calc(16px * 2);
+}
+.stepActive--imUKy_E4iu {
+  background-color: #0e353d;
+  color: #ffffff;
+}
+.stepNonActive--xeSLGT2sxx {
+  border: 1px solid #6e868b;
+  color: #0e353d;
+}
+.stepChecked--a8Ws99o1a8 {
+  background-color: #6e868b;
+  color: #ffffff;
+  padding: 8px 0 8px 8px;
+}
+.verticalLine--G7GUgp09Fu {
+  margin: 2px 0 0 15px;
+  height: 20px;
+  border-left: 1px solid #0e353d;
+}
+
+/*
+ * Custom @font-face rules are injected as a style element by
+ * <AppThemeProvider /> and rely on the @dashlane/fonts dependency.
+ */
+:root {
+  /* Font family variables */
+
+  /* Password Specific Styles */
+
+  /* Font size variables */
+
+  /* Font weight variables */
+
+  /* Line heights variables */
+}
+/*
+@deprecated
+* use z-index.ts values
+* Refer to z-index variables & values used in ui-components before updating this file.
+*/
+:root {
+  /* 1. Base z-index, to be used for most content elements that require a z-index. */
+  /* 2. "Below" z-index, to be used when placing an element "below" another within the stacking context. */
+
+  /* 3. Various previous "Content Overlap" z-index values, can be merged with caution. */
+
+  /* 4. Panel z-index. */
+
+  /* 5. "Above Panel" z-index. */
+
+  /*
+  * All variables from here refer to previously hardcoded z-index values.
+  */
+
+  /* Base z-index, see 1, keep sorted to reduce merge conflicts */
+
+  /* "Content Overlap" z-index, see 3. */
+
+  /* Looks unused ? */
+
+  /* Panel z-index, see 4. */
+
+  /* "Above Panel" z-index, see 5. */
+}
+.marketingContainer--SxfL8pgxbk {
+  background-color: #d9e6e9;
+  min-height: 100%;
+  width: 100%;
+}
+.logo--jLRcfkAOIN {
+  position: sticky;
+  padding-left: 80px;
+  top: 50px;
+}
+@media screen and (max-width: 80em) {
+  .logo--jLRcfkAOIN {
+    padding-left: 48px;
+  }
+}
+.marketingContent--zc3YCi_Fdp {
+  padding-left: 80px;
+  padding-right: 32px;
+  width: 100%;
+}
+@media screen and (max-width: 80em) {
+  .marketingContent--zc3YCi_Fdp {
+    padding-left: 48px;
+  }
+}
+.marketingInner--f_SwFpdRWH {
+  padding-top: 240px;
+  max-width: 66%;
+  min-width: 320px;
+}
+@media screen and (max-width: 80em) {
+  .marketingInner--f_SwFpdRWH {
+    max-width: 382px;
+    min-width: 280px;
+  }
+}
+.heading--biWK4zDb3i {
+  font-family: 'GT Walsheim Pro', 'Helvetica', 'Arial',
+    sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  color: #0e353d;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 80em) {
+  .heading--biWK4zDb3i {
+    font-size: 32px;
+    line-height: 34px;
+  }
+}
+.subheading--SIlKyRVTcn {
+  color: #0e353d;
+  font-size: 20px;
+  font-family: 'Public Sans', 'Helvetica Neue', Helvetica,
+    Arial, 'Lucida Grande', sans-serif;
+  line-height: 26px;
+  font-weight: 500;
+  max-width: 100%;
+}
+@media screen and (max-width: 80em) {
+  .subheading--SIlKyRVTcn {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+/*
+ * Custom @font-face rules are injected as a style element by
+ * <AppThemeProvider /> and rely on the @dashlane/fonts dependency.
+ */
+:root {
+  /* Font family variables */
+
+  /* Password Specific Styles */
+
+  /* Font size variables */
+
+  /* Font weight variables */
+
+  /* Line heights variables */
+}
+/*
+@deprecated
+* use z-index.ts values
+* Refer to z-index variables & values used in ui-components before updating this file.
+*/
+:root {
+  /* 1. Base z-index, to be used for most content elements that require a z-index. */
+  /* 2. "Below" z-index, to be used when placing an element "below" another within the stacking context. */
+
+  /* 3. Various previous "Content Overlap" z-index values, can be merged with caution. */
+
+  /* 4. Panel z-index. */
+
+  /* 5. "Above Panel" z-index. */
+
+  /*
+  * All variables from here refer to previously hardcoded z-index values.
+  */
+
+  /* Base z-index, see 1, keep sorted to reduce merge conflicts */
+
+  /* "Content Overlap" z-index, see 3. */
+
+  /* Looks unused ? */
+
+  /* Panel z-index, see 4. */
+
+  /* "Above Panel" z-index, see 5. */
+}
+.marketingContainer--bSLY2MAhlk {
+  width: 100%;
+  background-color: #d9e6e9;
+  overflow: hidden;
+}
+/* TODO: find out how B2B illustration should look on different screen sizes */
+.illustration--yA3XqDUv_x {
+  width: 100%;
+  /** Clamp illustration size so it looks better on "extreme" aspect ratios */
+  height: max(320px, min(52vh, 512px));
+  margin-top: 20vh;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkzIiBoZWlnaHQ9IjM2MSIgdmlld0JveD0iMCAwIDI5MyAzNjEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOTcuMTcyIDM5LjUxMUgyMDguMDE4VjI4LjY2NDhWMjMuNjI5MVYyMC45MTc2QzIwOC4wMTggMjAuNTMwMiAyMDguMDE4IDIwLjUzMDIgMjA3LjYzMSAyMC41MzAyTDIwNi44NTYgMjAuMTQyOUwyMDUuNjk0IDE5Ljc1NTVMMTk3Ljk0NiAxNy4wNDM5TDE3OC41NzggMTAuODQ2MUwxNTkuMjEgNC42NDg0TDE0OS41MjYgMS41NDk0M0wxNDYuODE1IDAuNzc0NzczTDE0NC40OSAwQzE0NC4xMDMgMCAxNDMuNzE2IDAuMTkzNjkzIDE0My4zMjggMC4zODczODZDMTQyLjk0MSAwLjU4MTA4IDE0Mi41NTQgMC43NzQ3NzMgMTQyLjE2NiAwLjc3NDc3M0wxMzYuNzQzIDIuNzExNTlMOTguMDA2OSAxNS40OTQ1TDg4LjMyMjggMTguNTkzNEw4My42NzQ0IDIwLjE0MjlMODEuMzUwMyAyMC45MTc2QzgwLjk2MjkgMjEuMzA0OSA4MC45NjI5IDIxLjY5MjQgODAuOTYyOSAyMi4wNzk3VjIzLjI0MThWMzIuMTUxMUM4MC45NjI5IDM5LjEyMzYgODAuOTYyOSA0Ni4wOTYyIDgxLjM1MDMgNTMuMDY4N0M4MS43Mzc2IDY1LjQ2NDMgODQuNDQ5MiA3Ny44NTk5IDg5Ljg3MjIgODkuNDgwOEM5NS4yOTUzIDEwMS4xMDIgMTAzLjQzIDExMS4xNzMgMTEyLjcyNyAxMTkuMzA4QzExNy4zNzUgMTIzLjE4MSAxMjIuMDIzIDEyNi42NjggMTI2LjY3MiAxMzAuMTU0QzEyOS4zODMgMTMxLjcwMyAxMzEuNzA3IDEzMy4yNTMgMTM0LjAzMiAxMzQuODAyTDE0My43MTYgMTQwLjYxM0wxNDQuNDkgMTQxQzE0NC40OSAxNDEgMTQ0Ljg3OCAxNDAuNjEzIDE0NS4yNjUgMTQwLjYxM0wxNDcuMjAyIDEzOS40NTFMMTUwLjY4OCAxMzcuMTI2TDE1NC41NjIgMTM0LjgwMkMxNTcuMjczIDEzMy4yNTMgMTU5LjU5OCAxMzEuNzAzIDE2MS45MjIgMTMwLjE1NEMxNjMuMDg0IDEyOS4zNzkgMTY0LjI0NiAxMjguNTA4IDE2NS40MDggMTI3LjYzNkMxNjYuNTcgMTI2Ljc2NCAxNjcuNzMyIDEyNS44OTMgMTY4Ljg5NCAxMjUuMTE4QzE3MS4yMTggMTIzLjU2OSAxNzMuNTQzIDEyMS42MzIgMTc1Ljg2NyAxMTkuNjk1QzE4NC43NzYgMTExLjk0OCAxOTIuOTExIDEwMi42NTEgMTk4LjMzNCA5MS44MDVDMjA0LjE0NCA4MS4zNDYyIDIwNi44NTYgNjkuMzM3OSAyMDguMDE4IDU3LjcxN0wyMDguNDA1IDUxLjkwNjZDMjA2LjQ2OCA1Mi40ODc2IDIwNC40MzUgNTIuOTcxOCAyMDIuNDAxIDUzLjQ1NjFDMjAwLjM2NyA1My45NDAzIDE5OC4zMzQgNTQuNDI0NSAxOTYuMzk3IDU1LjAwNTZWNTUuNzgwMlY1Ni4xNjc2VjU2Ljk0MjRWNTguMTA0NEwxOTUuNjIyIDYzLjE0MDFDMTkzLjI5OCA3Ni4zMTA0IDE4OC4yNjIgODguNzA2MSAxNzkuNzQgOTguNzc3NUMxNzEuMjE4IDEwOS4yMzYgMTYwLjM3MiAxMTcuMzcxIDE0OC43NTEgMTI0LjczMUwxNDQuODc4IDEyNy4wNTVMMTQxLjM5MSAxMjQuNzMxQzE0MC42MTcgMTI0LjM0MyAxMzkuOTM5IDEyMy44NTkgMTM5LjI2MSAxMjMuMzc1QzEzOC41ODMgMTIyLjg5MSAxMzcuOTA1IDEyMi40MDcgMTM3LjEzIDEyMi4wMTlDMTMxLjMyIDExOC4xNDYgMTI1Ljg5NyAxMTMuODg1IDEyMC44NjEgMTA5LjYyNEMxMTIuMzM5IDEwMi4yNjQgMTA1LjM2NyA5My4zNTQ0IDEwMC43MTggODMuNjcwNEM5Ni4wNzAxIDczLjk4NjMgOTMuNzQ1OSA2Mi43NTI3IDkyLjk3MTIgNTEuNTE5MkM5Mi41ODM4IDQ0LjkzNCA5Mi41ODM4IDM4LjM0ODkgOTIuNTgzOCAzMS4zNzY0VjI5LjQzOTZMMTAyLjI2OCAyNi4zNDA2TDE0MS4wMDQgMTMuNTU3N0wxNDQuODc4IDEyLjM5NTdMMTQ2LjgxNSAxMy4xNzAzTDE1Ni40OTkgMTYuMjY5M0wxNzUuODY3IDIyLjQ2N0wxOTUuMjM1IDI4LjY2NDhMMTk3LjE3MiAyOS40Mzk2VjM5LjUxMVpNMTQ2LjgxMiAzNi40MTJMMTU4LjQzMiAzMi4xNTFWMzYuNzk5NFY3OS4wMjE5TDE0Ni44MTIgODIuODk1NVY3Ny44NTk5VjM2LjQxMlpNMTcyLjM3NyAzNi40MTJMMTgzLjk5OCAzMi4xNTFWMzYuNzk5NFY1My40NTZMMTcyLjM3NyA1Ny43MTdWNTIuMjkzOVYzNi40MTJaIiBmaWxsPSIjMEUzNTNEIi8+CiAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00MC43MDEgMjE5Ljc5MUMyNi4xNDU1IDIxOS43OTEgMTQuMzA1NyAyMDcuOTUxIDE0LjMwNTcgMTkzLjM5NUMxNC4zMDU3IDE3OC44NCAyNi4xNDU1IDE2NyA0MC43MDEgMTY3QzUxLjc4MDUgMTY3IDYxLjY2NTEgMTczLjk1MiA2NS40NjY5IDE4NC4yNzFMNTUuMjU2NCAxODcuOTY0QzUyLjk3NTMgMTgxLjg4MSA0Ny4xMDk3IDE3Ny43NTQgNDAuNzAxIDE3Ny43NTRDMzIuMTE5OCAxNzcuNzU0IDI1LjE2NzkgMTg0LjcwNSAyNS4xNjc5IDE5My4yODdDMjUuMTY3OSAyMDEuODY4IDMyLjExOTggMjA4LjgyIDQwLjcwMSAyMDguODJDNDEuNjc4NiAyMDguODIgNDIuNTQ3NSAyMDguNzExIDQzLjQxNjUgMjA4LjYwMkw0NS4zNzE3IDIxOS4yNDdDNDMuODUxIDIxOS42ODIgNDIuMjIxNyAyMTkuNzkxIDQwLjcwMSAyMTkuNzkxWk04MC42NzQ1IDI1MC4zMTRDNjIuOTY5IDI1MC4zMTQgNDguNjMwOSAyMzUuOTc1IDQ4LjYzMDkgMjE4LjI3QzQ4LjYzMDkgMjAwLjU2NCA2Mi45NjkgMTg2LjIyNiA4MC42NzQ1IDE4Ni4yMjZDOTguMzggMTg2LjIyNiAxMTIuNzE4IDIwMC41NjQgMTEyLjcxOCAyMTguMjdIOTkuNjgzNUM5OS42ODM1IDIwNy43MzMgOTEuMTAyMyAxOTkuMjYxIDgwLjY3NDUgMTk5LjI2MUM3MC4yNDY4IDE5OS4yNjEgNjEuNjY1NiAyMDcuODQyIDYxLjY2NTYgMjE4LjI3QzYxLjY2NTYgMjI4LjgwNiA3MC4yNDY4IDIzNy4yNzkgODAuNjc0NSAyMzcuMjc5Qzg2Ljk3NDYgMjM3LjI3OSA5Mi44NDAzIDIzNC4yMzcgOTYuMzE2MiAyMjkuMDI0TDEwNy4wNyAyMzYuNDFDMTAxLjA5NiAyNDUuMjA4IDkxLjMxOTUgMjUwLjMxNCA4MC42NzQ1IDI1MC4zMTRaTTExMS45NTggMjM5LjIzNEMxMTEuOTU4IDI1OC4zNTIgMTI3LjQ5MSAyNzMuODg1IDE0Ni42MDkgMjczLjg4NUMxNTguMDE0IDI3My44ODUgMTY4LjY1OSAyNjguMjM2IDE3NS4xNzYgMjU4Ljg5NUwxNjQuNDIzIDI1MS41MDhDMTYwLjQwNCAyNTcuMzc0IDE1My42NjkgMjYwLjg1IDE0Ni42MDkgMjYwLjg1QzEzNC42NiAyNjAuODUgMTI0Ljk5MyAyNTEuMTgyIDEyNC45OTMgMjM5LjIzNEMxMjQuOTkzIDIyNy4yODUgMTM0LjY2IDIxNy42MTggMTQ2LjYwOSAyMTcuNjE4QzE1OC41NTcgMjE3LjYxOCAxNjguMjI1IDIyNy4yODUgMTY4LjIyNSAyMzkuMjM0SDE4MS4yNTlDMTgxLjI1OSAyMjAuMTE2IDE2NS43MjYgMjA0LjU4MyAxNDYuNjA5IDIwNC41ODNDMTI3LjQ5MSAyMDQuNTgzIDExMS45NTggMjIwLjExNiAxMTEuOTU4IDIzOS4yMzRaTTE4NC44NDQgMzYxTDE5Ny44NzggMzU2LjIyMVYzMzMuMDg0VjMxMi44OEwxNzQuODUgMjg5Ljc0NEgxMTcuMTcyTDk0LjAzNTIgMzEyLjg4VjM2MC42NzRIMTQ5Ljc1OUgxNzcuNjc1TDE3Mi44OTUgMzQ3LjYzOUgxNDkuNzU5SDEwNy4wN1YzMTguMzExTDEyMi40OTQgMzAyLjc3OEgxNjkuNDE5TDE4NC44NDQgMzE4LjMxMVYzMzMuMDg0VjM2MVpNOTkuNTc1MiAyNzYuNzA5VjI2My42NzRINzEuMjI0N0g1NS4wMzk5SDU0LjE3MDlDNTQuMTAxOSAyNjMuNjc0IDU0LjAzNzggMjYzLjY2OSA1My45Nzc1IDI2My42NjVMNTMuOTc3MyAyNjMuNjY1QzUzLjc1MjkgMjYzLjY0OCA1My41ODE4IDI2My42MzUgNTMuNDEwNiAyNjMuODkxTDUyLjEwNzEgMjY1LjE5NUw0OS43MTc0IDI2Ny41ODVMNDcuMjE5MSAyNzAuMDgzTDQyLjIyMjQgMjc1LjA3OUwzNi40NjU0IDI4MC44MzZMMzMuOTY3MSAyODMuMzM1TDMyLjU1NSAyODQuNzQ3QzMyLjI3ODggMjg1LjA5MiAzMi4zMDk5IDI4NS41MjUgMzIuMzQxMyAyODUuOTYyQzMyLjM1OTMgMjg2LjIxMyAzMi4zNzczIDI4Ni40NjUgMzIuMzM3OCAyODYuNzAyVjI5Mi41NjhWMzA4Ljg2MVYzMjQuNTAzVjMyNy4zMjdDMzIuMzY0OSAzMjcuNTQ0IDMyLjM1MTMgMzI3LjgwMiAzMi4zMzc4IDMyOC4wNkMzMi4yOTcgMzI4LjgzNCAzMi4yNTYzIDMyOS42MDggMzMuMzE1NCAzMjkuMjgySDM5LjA3MjRINDcuOTc5NEg3MS4wMDc0SDgwLjI0MDNIODUuMTI4NEw4MC4zNDkgMzE2LjI0N0g3MS4wMDc0SDQ3Ljk3OTRINDUuMzcyNVYzMDguODYxVjI5Mi41NjhWMjkwLjM5NUw0NS42OTg0IDI5MC4wNjlMNTEuNDU1NCAyODQuMzEyTDU5LjA1ODkgMjc2LjcwOUg3MS4yMjQ3SDk5LjU3NTJaTTQwLjA0OTUgMjQxLjg0MVYyMzAuMTFIMjcuMzQwNkgxOC44NjgxQzE4LjMyNSAyMjkuODkzIDE3Ljg5MDUgMjMwLjMyNyAxNy41NjQ2IDIzMC43NjJMMTYuNDc4NCAyMzEuODQ4TDE0LjUyMzIgMjMzLjgwM0wxMi4yNDIxIDIzNi4wODRMMS44MTQzMiAyNDYuNTEyTDAuNjE5NDcgMjQ3LjcwN0MwLjM0MzI5IDI0Ny45ODMgMC4zNzQzMjUgMjQ4LjM0NyAwLjQwNTcwOSAyNDguNzE1QzAuNDIzNjk4IDI0OC45MjYgMC40NDE4MDIgMjQ5LjEzOCAwLjQwMjIyNSAyNDkuMzM2VjI1Mi43MDNWMjU2LjA3MVYyNjIuNjk3VjI4My4xMThDMC40NTY1MzYgMjgzLjM4OSAwLjQ1NjUzNiAyODMuNzE1IDAuNDU2NTM2IDI4NC4wNDFDMC40NTY1MzYgMjg0LjM2NyAwLjQ1NjUzNiAyODQuNjkzIDAuNTEwODQ3IDI4NC45NjRIMi40NjYwNUg2LjI2Nzg1SDEzLjExMTFIMjAuODIzM0gyNS4yNzY4TDIyLjAxODEgMjc1Ljk0OUwyMS4wNDA1IDI3My4yMzNIMTIuMTMzNVYyNjIuNjk3VjI1Mi44MTJMMjAuNjA2IDI0NC4zMzlMMjMuMTA0NCAyNDEuODQxSDI3LjM0MDZINDAuMDQ5NVpNMjEyLjMyNSAyNTAuMzE0QzIwMS43ODkgMjUwLjMxNCAxOTEuOTA0IDI0NS4xIDE4NS45MyAyMzYuNDFMMTk2LjY4MyAyMjkuMDI0QzIwMC4yNjggMjM0LjIzNyAyMDYuMTMzIDIzNy4yNzkgMjEyLjMyNSAyMzcuMjc5QzIyMi44NjEgMjM3LjI3OSAyMzEuMzM0IDIyOC42OTggMjMxLjMzNCAyMTguMjdDMjMxLjMzNCAyMDcuNzMzIDIyMi43NTMgMTk5LjI2MSAyMTIuMzI1IDE5OS4yNjFDMjAxLjc4OSAxOTkuMjYxIDE5My4zMTYgMjA3Ljg0MiAxOTMuMzE2IDIxOC4yN0gxODAuMjgxQzE4MC4yODEgMjAwLjU2NCAxOTQuNjE5IDE4Ni4yMjYgMjEyLjMyNSAxODYuMjI2QzIzMC4wMyAxODYuMjI2IDI0NC4zNjkgMjAwLjU2NCAyNDQuMzY5IDIxOC4yN0MyNDQuMzY5IDIzNS45NzUgMjMwLjAzIDI1MC4zMTQgMjEyLjMyNSAyNTAuMzE0Wk0xOTMuNDI1IDI2My42NzRWMjc2LjZMMjIxLjc3NSAyNzYuNzA5SDIzMy45NDFMMjQxLjU0NSAyODQuMzEyTDI0Ny4zMDIgMjkwLjA2OUwyNDcuNjI4IDI5MC4zOTVWMjkyLjU2OFYzMDguODYxVjMxNi4yNDdIMjQ1LjAyMUgyMjEuOTkzSDIxMi43NkgyMDcuODcyTDIxMi42NTEgMzI5LjI4MkgyMjEuOTkzSDI0NS4wMjFIMjUzLjkyOEgyNTkuNjg1QzI2MC43NDQgMzI5LjYwOCAyNjAuNzAzIDMyOC44MzQgMjYwLjY2MiAzMjguMDZDMjYwLjY0OSAzMjcuODAyIDI2MC42MzUgMzI3LjU0NCAyNjAuNjYyIDMyNy4zMjdWMzI0LjUwM1YzMDguODYxVjI5Mi41NjhWMjg2LjcwMkMyNjAuNjIzIDI4Ni40NjQgMjYwLjY0MSAyODYuMTk4IDI2MC42NTkgMjg1LjkzNEMyNjAuNjkgMjg1LjQ3NCAyNjAuNzIxIDI4NS4wMjMgMjYwLjQ0NSAyODQuNzQ3TDI1OS4wMzMgMjgzLjMzNUwyNTYuNTM1IDI4MC44MzZMMjUwLjc3OCAyNzUuMDc5TDI0NS43ODEgMjcwLjA4M0wyNDMuMjgzIDI2Ny41ODRMMjQwLjg5MyAyNjUuMTk1TDIzOS41ODkgMjYzLjg5MUMyMzkuNDgxIDI2My42NzQgMjM5LjE1NSAyNjMuNjc0IDIzOC44MjkgMjYzLjY3NEgyMzcuOTZIMjIxLjc3NUgxOTMuNDI1Wk0yNTIuNDA3IDIxOS43OTFDMjUwLjg4NiAyMTkuNzkxIDI0OS4yNTcgMjE5LjY4MiAyNDcuNzM2IDIxOS4zNTZMMjQ5LjY5MSAyMDguNzExQzI1MC41NiAyMDguOTI4IDI1MS41MzggMjA4LjkyOCAyNTIuNDA3IDIwOC45MjhDMjYwLjk4OCAyMDguOTI4IDI2Ny45NCAyMDEuOTc2IDI2Ny45NCAxOTMuMzk1QzI2Ny45NCAxODQuODE0IDI2MC45ODggMTc3Ljg2MiAyNTIuNDA3IDE3Ny44NjJDMjQ1Ljg4OSAxNzcuODYyIDI0MC4wMjQgMTgxLjk5IDIzNy44NTEgMTg4LjA3M0wyMjcuNjQxIDE4NC4zOEMyMzEuMzM0IDE3My45NTIgMjQxLjMyNyAxNjcgMjUyLjQwNyAxNjdDMjY2Ljk2MiAxNjcgMjc4LjgwMiAxNzguODQgMjc4LjgwMiAxOTMuMzk1QzI3OC44MDIgMjA3Ljk1MSAyNjYuOTYyIDIxOS43OTEgMjUyLjQwNyAyMTkuNzkxWk0yNTMuMDU5IDIzMC4xMVYyNDEuODQxVjI0MS45NUgyNjUuODc2SDI3MC4xMTJMMjcyLjYxMSAyNDQuNDQ4TDI4MC45NzUgMjUyLjgxMlYyNjIuNjk3VjI3My4yMzNIMjcyLjI4NUgyNjcuODMxTDI3MS4wOSAyODIuMjQ5TDI3Mi4wNjggMjg0Ljk2NEgyNzkuMzQ1SDI4NS43NTRIMjg5Ljc3M0gyOTEuNzI4SDI5Mi43MDZWMjgzLjk4N1YyNjIuNjk3VjI1Ni4wNzFWMjUyLjcwM1YyNDkuMzM2QzI5Mi42NjYgMjQ5LjEzOCAyOTIuNjg0IDI0OC45MjYgMjkyLjcwMiAyNDguNzE1QzI5Mi43MzQgMjQ4LjM0NyAyOTIuNzY1IDI0Ny45ODMgMjkyLjQ4OSAyNDcuNzA3TDI5MS4yOTQgMjQ2LjUxMkwyODAuODY2IDIzNi4wODRMMjc4LjU4NSAyMzMuODAzTDI3Ni42MyAyMzEuODQ4TDI3NS41NDMgMjMwLjc2MkMyNzUuMjE4IDIzMC4zMjcgMjc0Ljc4MyAyMzAuMDAxIDI3NC4yNCAyMzAuMTFIMjY1Ljc2N0gyNTMuMDU5WiIgZmlsbD0iIzBFMzUzRCIvPgo8L3N2Zz4K);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/*
+ * Custom @font-face rules are injected as a style element by
+ * <AppThemeProvider /> and rely on the @dashlane/fonts dependency.
+ */
+:root {
+  /* Font family variables */
+
+  /* Password Specific Styles */
+
+  /* Font size variables */
+
+  /* Font weight variables */
+
+  /* Line heights variables */
+}
+/*
+@deprecated
+* use z-index.ts values
+* Refer to z-index variables & values used in ui-components before updating this file.
+*/
+:root {
+  /* 1. Base z-index, to be used for most content elements that require a z-index. */
+  /* 2. "Below" z-index, to be used when placing an element "below" another within the stacking context. */
+
+  /* 3. Various previous "Content Overlap" z-index values, can be merged with caution. */
+
+  /* 4. Panel z-index. */
+
+  /* 5. "Above Panel" z-index. */
+
+  /*
+  * All variables from here refer to previously hardcoded z-index values.
+  */
+
+  /* Base z-index, see 1, keep sorted to reduce merge conflicts */
+
+  /* "Content Overlap" z-index, see 3. */
+
+  /* Looks unused ? */
+
+  /* Panel z-index, see 4. */
+
+  /* "Above Panel" z-index, see 5. */
+}
+.marketingContainer--L3Q9btSaiH {
+  background-color: #d9e6e9;
+  min-height: 100%;
+  width: 100%;
+}
+.marketingContent--UDkZ3pJXp_ {
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 100%;
+}
+@media screen and (max-width: 80em) {
+  .marketingContent--UDkZ3pJXp_ {
+    padding-left: 48px;
+  }
+}
+.marketingInner--ePKq3m573m {
+  padding-top: 240px;
+  max-width: 66%;
+  min-width: 320px;
+}
+@media screen and (max-width: 80em) {
+  .marketingInner--ePKq3m573m {
+    max-width: 382px;
+    min-width: 280px;
+  }
+}
+.heading--psdo239Bgj {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 80em) {
+  .heading--psdo239Bgj {
+    font-size: 32px;
+    line-height: 34px;
+  }
+}
+.subtitle--JMmo3kLdJW {
+  line-height: 26px;
+  max-width: 80%;
+  min-width: inherit;
+}
+@media screen and (max-width: 80em) {
+  .subtitle--JMmo3kLdJW {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+

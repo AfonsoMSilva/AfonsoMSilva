@@ -1,0 +1,6 @@
+2024/06/04-17:22:41.701 340 Creating DB /home/af/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.gamedev.net_0.indexeddb.leveldb since it was missing.
+2024/06/04-17:22:41.821 340 Reusing MANIFEST /home/af/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.gamedev.net_0.indexeddb.leveldb/MANIFEST-000001
+2024/06/04-17:23:14.512 341 Level-0 table #5: started
+2024/06/04-17:23:14.554 341 Level-0 table #5: 5684 bytes OK
+2024/06/04-17:23:14.586 341 Delete type=0 #3
+2024/06/04-17:23:14.586 341 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

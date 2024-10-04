@@ -1,0 +1,30 @@
+2024/04/26-21:57:46.950 2eb Reusing MANIFEST /home/af/.config/Morgen/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2024/04/26-21:57:46.950 2eb Recovering log #78
+2024/04/26-21:57:47.294 2eb Reusing old log /home/af/.config/Morgen/IndexedDB/file__0.indexeddb.leveldb/000078.log 
+2024/04/26-22:31:16.170 2eb Level-0 table #83: started
+2024/04/26-22:31:16.268 2eb Level-0 table #83: 856415 bytes OK
+2024/04/26-22:31:16.305 2eb Delete type=0 #78
+2024/04/26-22:31:30.752 30d Compacting 1@1 + 1@2 files
+2024/04/26-22:31:30.827 30d Generated table #84@1: 5065 keys, 242837 bytes
+2024/04/26-22:31:30.827 30d Compacted 1@1 + 1@2 files => 242837 bytes
+2024/04/26-22:31:30.860 30d compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/04/26-22:31:30.861 30d Delete type=2 #83
+2024/04/26-22:31:30.861 30d Delete type=2 #80
+2024/04/26-23:38:31.376 2eb Level-0 table #86: started
+2024/04/26-23:38:31.477 2eb Level-0 table #86: 785801 bytes OK
+2024/04/26-23:38:31.513 2eb Delete type=0 #82
+2024/04/26-23:38:45.464 2eb Compacting 1@1 + 1@2 files
+2024/04/26-23:38:45.538 2eb Generated table #87@1: 5247 keys, 250550 bytes
+2024/04/26-23:38:45.538 2eb Compacted 1@1 + 1@2 files => 250550 bytes
+2024/04/26-23:38:45.627 2eb compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/04/26-23:38:45.627 2eb Delete type=2 #84
+2024/04/26-23:38:45.627 2eb Delete type=2 #86
+2024/04/27-00:43:37.343 2eb Level-0 table #89: started
+2024/04/27-00:43:37.446 2eb Level-0 table #89: 795647 bytes OK
+2024/04/27-00:43:37.481 2eb Delete type=0 #85
+2024/04/27-00:43:50.632 2eb Compacting 1@1 + 1@2 files
+2024/04/27-00:43:50.716 2eb Generated table #90@1: 5428 keys, 257176 bytes
+2024/04/27-00:43:50.716 2eb Compacted 1@1 + 1@2 files => 257176 bytes
+2024/04/27-00:43:50.746 2eb compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/04/27-00:43:50.746 2eb Delete type=2 #89
+2024/04/27-00:43:50.746 2eb Delete type=2 #87

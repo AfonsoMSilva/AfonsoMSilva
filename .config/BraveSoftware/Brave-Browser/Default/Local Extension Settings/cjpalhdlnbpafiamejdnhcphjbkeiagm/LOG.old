@@ -1,0 +1,26 @@
+2024/10/02-10:55:36.021 342 Reusing MANIFEST /home/af/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/MANIFEST-000001
+2024/10/02-10:55:36.023 342 Recovering log #13
+2024/10/02-10:55:36.149 342 Reusing old log /home/af/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/000013.log 
+2024/10/02-10:56:25.871 322 Level-0 table #17: started
+2024/10/02-10:56:26.104 322 Level-0 table #17: 5290870 bytes OK
+2024/10/02-10:56:26.261 322 Delete type=0 #13
+2024/10/02-10:56:26.263 322 Compacting 4@0 + 1@1 files
+2024/10/02-10:56:26.424 322 Generated table #18@0: 6 keys, 2504944 bytes
+2024/10/02-10:56:26.558 322 Generated table #19@0: 8 keys, 2787990 bytes
+2024/10/02-10:56:26.651 322 Generated table #20@0: 13 keys, 1962358 bytes
+2024/10/02-10:56:26.651 322 Compacted 4@0 + 1@1 files => 7255292 bytes
+2024/10/02-10:56:26.751 322 compacted to: files[ 0 3 1 0 0 0 0 ]
+2024/10/02-10:56:26.751 322 Delete type=2 #14
+2024/10/02-10:56:26.751 322 Delete type=2 #9
+2024/10/02-10:56:26.752 322 Delete type=2 #12
+2024/10/02-10:56:26.753 322 Delete type=2 #17
+2024/10/02-10:56:26.753 322 Delete type=2 #7
+2024/10/02-10:57:24.339 317 Level-0 table #22: started
+2024/10/02-10:57:24.527 317 Level-0 table #22: 8989565 bytes OK
+2024/10/02-10:57:24.564 317 Delete type=0 #16
+2024/10/02-14:56:26.298 318 Level-0 table #24: started
+2024/10/02-14:56:26.458 318 Level-0 table #24: 4222596 bytes OK
+2024/10/02-14:56:26.545 318 Delete type=0 #21
+2024/10/02-14:57:24.455 318 Level-0 table #26: started
+2024/10/02-14:57:24.624 318 Level-0 table #26: 7942055 bytes OK
+2024/10/02-14:57:24.655 318 Delete type=0 #23

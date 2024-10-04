@@ -1,0 +1,18 @@
+2024/02/11-17:09:56.986 2e2 Reusing MANIFEST /home/af/.config/Morgen/Local Storage/leveldb/MANIFEST-000001
+2024/02/11-17:09:57.024 2e2 Recovering log #174
+2024/02/11-17:09:57.114 2e2 Reusing old log /home/af/.config/Morgen/Local Storage/leveldb/000174.log 
+2024/02/11-17:12:06.207 2e2 Level-0 table #178: started
+2024/02/11-17:12:06.321 2e2 Level-0 table #178: 71548 bytes OK
+2024/02/11-17:12:06.438 2e2 Delete type=0 #174
+2024/02/11-17:12:06.438 2e2 Compacting 4@0 + 1@1 files
+2024/02/11-17:12:06.564 2e2 Generated table #179@0: 188 keys, 74467 bytes
+2024/02/11-17:12:06.564 2e2 Compacted 4@0 + 1@1 files => 74467 bytes
+2024/02/11-17:12:06.621 2e2 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/02/11-17:12:06.621 2e2 Delete type=2 #175
+2024/02/11-17:12:06.621 2e2 Delete type=2 #173
+2024/02/11-17:12:06.621 2e2 Delete type=2 #171
+2024/02/11-17:12:06.621 2e2 Delete type=2 #169
+2024/02/11-17:12:06.621 2e2 Delete type=2 #178
+2024/02/11-17:22:06.206 2e2 Level-0 table #181: started
+2024/02/11-17:22:06.259 2e2 Level-0 table #181: 67857 bytes OK
+2024/02/11-17:22:06.300 2e2 Delete type=0 #177

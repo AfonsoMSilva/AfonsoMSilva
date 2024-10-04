@@ -1,0 +1,14 @@
+PS1="[%n@%m %1~]$ "
+setopt autocd		# Automatically cd into typed directory.
+stty stop undef		# Disable ctrl-s to freeze terminal.
+clear
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)
+alias cbl="clear && ./build.sh && ./main"
+alias zrc="nvim ~/.zshrc"
+alias makebuild="~/personal/scripts/makebuild.sh"
+source ~/.local/bin
+source ~/path/to/fsh/fast-syntax-highlighting.plugin.zsh

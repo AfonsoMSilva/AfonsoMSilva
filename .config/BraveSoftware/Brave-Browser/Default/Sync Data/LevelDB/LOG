@@ -1,0 +1,60 @@
+2024/10/04-12:19:50.135 350 Reusing MANIFEST /home/af/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/MANIFEST-000001
+2024/10/04-12:19:50.685 350 Recovering log #511
+2024/10/04-12:19:50.884 350 Reusing old log /home/af/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/000511.log 
+2024/10/04-12:20:13.197 36e Level-0 table #515: started
+2024/10/04-12:20:13.637 36e Level-0 table #515: 60518 bytes OK
+2024/10/04-12:20:14.649 36e Delete type=0 #511
+2024/10/04-12:36:01.152 358 Level-0 table #517: started
+2024/10/04-12:36:01.336 358 Level-0 table #517: 89659 bytes OK
+2024/10/04-12:36:01.489 358 Delete type=0 #514
+2024/10/04-12:36:01.490 358 Compacting 4@0 + 1@1 files
+2024/10/04-12:36:01.632 358 Generated table #518@0: 189 keys, 25816 bytes
+2024/10/04-12:36:01.632 358 Compacted 4@0 + 1@1 files => 25816 bytes
+2024/10/04-12:36:01.732 358 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/10/04-12:36:01.732 358 Delete type=2 #517
+2024/10/04-12:36:01.732 358 Delete type=2 #510
+2024/10/04-12:36:01.732 358 Delete type=2 #515
+2024/10/04-12:36:01.732 358 Delete type=2 #512
+2024/10/04-12:36:01.733 358 Delete type=2 #508
+2024/10/04-12:52:15.735 358 Level-0 table #520: started
+2024/10/04-12:52:15.877 358 Level-0 table #520: 80051 bytes OK
+2024/10/04-12:52:16.020 358 Delete type=0 #516
+2024/10/04-13:19:41.278 358 Level-0 table #522: started
+2024/10/04-13:19:41.438 358 Level-0 table #522: 84405 bytes OK
+2024/10/04-13:19:41.518 358 Delete type=0 #519
+2024/10/04-14:13:32.742 34f Level-0 table #524: started
+2024/10/04-14:13:32.804 34f Level-0 table #524: 64073 bytes OK
+2024/10/04-14:13:32.845 34f Delete type=0 #521
+2024/10/04-14:16:55.995 350 Level-0 table #526: started
+2024/10/04-14:16:56.138 350 Level-0 table #526: 94211 bytes OK
+2024/10/04-14:16:56.349 350 Delete type=0 #523
+2024/10/04-14:16:56.349 350 Compacting 4@0 + 1@1 files
+2024/10/04-14:16:56.575 350 Generated table #527@0: 189 keys, 26390 bytes
+2024/10/04-14:16:56.575 350 Compacted 4@0 + 1@1 files => 26390 bytes
+2024/10/04-14:16:56.697 350 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/10/04-14:16:56.698 350 Delete type=2 #526
+2024/10/04-14:16:56.698 350 Delete type=2 #518
+2024/10/04-14:16:56.698 350 Delete type=2 #524
+2024/10/04-14:16:56.698 350 Delete type=2 #522
+2024/10/04-14:16:56.698 350 Delete type=2 #520
+2024/10/04-14:56:31.571 35a Level-0 table #529: started
+2024/10/04-14:56:31.903 35a Level-0 table #529: 65917 bytes OK
+2024/10/04-14:56:32.063 35a Delete type=0 #525
+2024/10/04-15:57:40.302 359 Level-0 table #531: started
+2024/10/04-15:57:40.421 359 Level-0 table #531: 60822 bytes OK
+2024/10/04-15:57:40.510 359 Delete type=0 #528
+2024/10/04-16:56:38.913 34f Level-0 table #533: started
+2024/10/04-16:56:38.956 34f Level-0 table #533: 62384 bytes OK
+2024/10/04-16:56:38.994 34f Delete type=0 #530
+2024/10/04-17:02:12.389 358 Level-0 table #535: started
+2024/10/04-17:02:12.513 358 Level-0 table #535: 90890 bytes OK
+2024/10/04-17:02:12.622 358 Delete type=0 #532
+2024/10/04-17:02:12.623 358 Compacting 4@0 + 1@1 files
+2024/10/04-17:02:12.698 358 Generated table #536@0: 189 keys, 23383 bytes
+2024/10/04-17:02:12.698 358 Compacted 4@0 + 1@1 files => 23383 bytes
+2024/10/04-17:02:12.783 358 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/10/04-17:02:12.783 358 Delete type=2 #531
+2024/10/04-17:02:12.783 358 Delete type=2 #529
+2024/10/04-17:02:12.783 358 Delete type=2 #535
+2024/10/04-17:02:12.783 358 Delete type=2 #527
+2024/10/04-17:02:12.785 358 Delete type=2 #533
